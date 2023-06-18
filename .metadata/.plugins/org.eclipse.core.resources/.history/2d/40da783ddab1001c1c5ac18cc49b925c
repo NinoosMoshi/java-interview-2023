@@ -1,0 +1,29 @@
+package demo;
+
+import java.util.ArrayList;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		
+		// ninos , nahrain, matthew
+		
+		ArrayList<String> s = new ArrayList<>();
+		s.add("ninos");
+		s.add("nahrain");
+		s.add("matthew");
+		System.out.println(s);
+		
+		
+		
+		
+		
+     
+     
+     
+     
+     
+     
+	}
+
+}
