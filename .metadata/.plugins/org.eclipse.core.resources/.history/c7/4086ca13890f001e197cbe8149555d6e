@@ -1,0 +1,28 @@
+package test;
+
+import java.util.Arrays;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		int my_arr[] = {2,6,4,3,1};
+		
+		// convert integer to String
+		String my_arr_string = Arrays.toString(my_arr);
+		System.out.println("Original array: " + my_arr_string);                   // [2, 6, 4, 3, 1]
+		
+		// sort array
+		Arrays.sort(my_arr);
+		System.out.println("Sorted array  : " + Arrays.toString(my_arr));         // [1, 2, 3, 4, 6]
+		
+		
+		int left = 0;
+		int right = my_arr.length;
+		
+		System.out.println(left + " "+ right);
+		
+		
+	}
+
+}
