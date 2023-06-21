@@ -1,6 +1,6 @@
-package test;
+package find_pair;
 
-public class Test {
+public class Sulotion_LeetCode {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

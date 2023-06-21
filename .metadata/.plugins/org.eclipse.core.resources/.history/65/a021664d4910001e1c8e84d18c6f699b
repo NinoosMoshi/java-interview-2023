@@ -1,0 +1,38 @@
+package test;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+	Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter the number: ");
+		int num = sc.nextInt();
+		
+		
+		int length = String.valueOf(num).length();
+		
+		System.out.println(length);
+		
+
+//		isPalindrome(num);
+		
+	 }
+	
+	
+	 public static boolean isPalindrome(int x) {
+		 
+		 return true;
+	 }
+	        
+}
+	
+	
+
+		
+

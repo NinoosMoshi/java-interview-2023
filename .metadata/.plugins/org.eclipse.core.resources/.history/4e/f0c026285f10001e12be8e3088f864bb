@@ -1,0 +1,10 @@
+package find_first_RepeatChar;
+
+public class Sulotion_one {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
