@@ -1,0 +1,42 @@
+package remove_duplicate;
+
+import java.util.*;
+import java.util.stream.IntStream;
+
+// remove duplicate from sorted array using Set
+public class Sulotion_three {
+
+	public static void main(String[] args) {
+		
+		int[] arr = {2,4,7,3,4,2,4};
+		
+		System.out.println(Arrays.toString(removeDuplicates(arr)));
+						
+
+	}
+	
+	
+	public static int[] removeDuplicates(int[] arr){
+        
+	   Set<Integer> set = new HashSet<Integer>();
+	   
+	   for(int i=0; i<arr.length; i++) {
+		   set.add(arr[i]);
+	   }
+	   
+	   int[] new_arr = new int[set.size()];
+	   
+	   int x=0;
+	   
+	  for(int temp: set) {
+		  new_arr[x] = temp;
+		  x++;
+	  }
+	   
+	  return new_arr;
+		
+    }
+	
+	
+
+}
