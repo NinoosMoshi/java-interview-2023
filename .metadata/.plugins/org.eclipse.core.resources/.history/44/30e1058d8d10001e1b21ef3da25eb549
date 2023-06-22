@@ -1,0 +1,54 @@
+package find_pair;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Sulotion_three {
+
+	public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter the length of array: ");
+		int length = sc.nextInt();
+		
+		System.out.println("Enter " + length + " numbers: "); 
+		int [] myArray = new int[length];
+		
+		
+		for(int i=0; i < length; i++) {
+			myArray[i] = sc.nextInt();
+		}
+			
+		
+		// convert integer to String
+		String my_arr_string = Arrays.toString(myArray);
+		System.out.println("Original array: " + my_arr_string);                   // [2, 6, 4, 3, 1]  k = 7
+		
+		
+        System.out.println("Enter the result of two sum number: ");
+		int k = sc.nextInt();
+		
+		
+		System.out.println(findPair(myArray, k));
+
+	}
+	
+	
+		
+		public static int[] findPair(int[] nums, int target) {
+			int n = nums.length;
+	        
+	        for (int i = 0; i < n; i++) {
+	            for (int j = i + 1; j < n; j++) {
+	            	int complement = target - nums[i];
+	            	
+	                if (nums[j] == complement)
+	                    return new int[] {i,j};
+	            }
+	        }
+	        
+	        return nums;
+	}
+
+	}
+		

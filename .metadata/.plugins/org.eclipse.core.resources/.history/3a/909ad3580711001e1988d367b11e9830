@@ -1,0 +1,38 @@
+package remove_duplicate;
+
+import java.util.*;
+import java.util.stream.IntStream;
+
+// remove duplicate from sorted array
+public class Sulotion_one {
+
+	public static void main(String[] args) {
+		
+		int[] arr = {4, 2, 5, 3, 3, 1, 2, 4, 1, 5, 5, 5, 3, 1};
+		
+		System.out.println(removeDuplicates(arr));
+						
+
+	}
+	
+	// int[] arr = {1,1,2,2,2,3,3,4,5,5,5}
+	public static int[] removeDuplicates(int[] arr){
+        
+		int[] temp = new int[arr.length];
+		
+		int j=0;
+		
+        for(int i=0; i<arr.length-1; i++) {
+        	if(arr[i] != arr[i+1]) {
+        		arr[j] = arr[i + 1];
+        		j++;
+        	}
+        }
+        
+        return j;
+		
+    }
+	
+	
+
+}
